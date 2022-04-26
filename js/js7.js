@@ -6,3 +6,6 @@ console.log(arr);
 //     console.log(arr[a]);
 // }
 
+// Date
+let myDate = new Date();
+console.log(myDate);
