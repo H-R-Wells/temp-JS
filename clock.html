@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Clock Bitch</title>
 
 </head>
 
 <body>
 
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">ClockBitch</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +49,9 @@
 
 
 
-
+    <div class="container my-4">
+        <h2 class="text-center">To-Do List</h2>
+    </div>
 
 
 
@@ -59,7 +63,7 @@
             </h1>
             <p class="lead">OK damm!!</p>
             <hr class="my-4">
-            <p>Time dikh raha ahe dekh le </p>
+            <p>Time dikh raha he, dekh le </p>
             <p class="lead">
                 <a id="btn1" class="btn btn-primary btn-lg" href="#" role="button">Browse Times</a>
             </p>
@@ -91,7 +95,7 @@
         let a;
         // let date;
         let time;
-  
+
 
 
 
@@ -105,7 +109,7 @@
             hours = hours % 12;
             hours = hours ? hours : 12; // the hour '0' should be '12'
             minutes = minutes < 10 ? '0' + minutes : minutes;
-            var strTime = hours + ':' + minutes +':'+ sec +' ' + ampm +" on " + day;
+            var strTime = hours + ':' + minutes + ':' + sec + ' ' + ampm + " on " + day;
             return strTime;
         }
 
@@ -123,7 +127,7 @@
 
 
 
- 
+
 
 
         btn1.addEventListener('click', function () {
